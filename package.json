@@ -1,7 +1,7 @@
 {
   "name": "chronosdragondice",
   "version": "0.0.1",
-  "description": "",
+  "description": "dragon dice game",
   "main": "server.js",
   "dependencies": {
     "express": "^4.10.4",
