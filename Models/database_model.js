@@ -4,10 +4,10 @@
     var db = null;
     var mysql = require('mysql');
     var config = {
-        host : '127.0.0.1',
-        user : 'root',
-        passwoed : '',
-        database : 'mydb',
+        host : '50.116.112.100',
+        user : 'dragondi_wp831',
+        password : 'Animes21',
+        database : 'dragondi_chronos',
     }
 
     this.connect = function (callback){
