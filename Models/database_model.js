@@ -5,8 +5,8 @@
     var mysql = require('mysql');
     var config = {
         host : 'localhost',
-        user : 'dragondi_adm',
-        password : 'Animes21',
+        user : '',
+        password : '',
         database : 'dragondi_chronos',
     }
 
