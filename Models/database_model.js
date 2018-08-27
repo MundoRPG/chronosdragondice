@@ -4,9 +4,9 @@
     var db = null;
     var mysql = require('mysql');
     var config = {
-        host : '50.116.112.100',
-        user : 'dragondi_wp831',
-        password : 'Animes21',
+        host : '',
+        user : '',
+        password : '',
         database : 'dragondi_chronos',
     }
 
