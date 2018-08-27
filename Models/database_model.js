@@ -4,10 +4,10 @@
     var db = null;
     var mysql = require('mysql');
     var config = {
-        host : 'dragondice.com.br',
-        user : 'dragondi_adm',
+        host : 'mundorpg.16mb.com',
+        user : 'u388851258_game',
         password : 'Animes21',
-        database : 'dragondi_chronos',
+        database : 'u388851258_game',
 	    
     }
 
