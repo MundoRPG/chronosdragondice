@@ -13,7 +13,7 @@
 
     this.connect = function (callback){
         
-        db = mysql.createConnection(config);
+        db = mysql.createConnection(config || process.env.DATABASE_URL);
         db.connect(function (err) {
             
            if (err) 
