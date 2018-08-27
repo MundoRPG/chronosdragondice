@@ -4,9 +4,9 @@
     var db = null;
     var mysql = require('mysql');
     var config = {
-        host : '',
-        user : '',
-        password : '',
+        host : 'localhost',
+        user : 'dragondi_adm',
+        password : 'Animes21',
         database : 'dragondi_chronos',
     }
 
