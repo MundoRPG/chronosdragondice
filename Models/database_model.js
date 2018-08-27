@@ -4,8 +4,8 @@
     var db = null;
     var mysql = require('mysql');
     var config = {
-        host : 'files61.hostinger.com.br',
-        user : 'u388851258_game',
+        host : 'mundorpg.16mb.com',
+        user : 'u388851258',
         password : 'Animes21',
         database : 'u388851258_game',
 	    
