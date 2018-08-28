@@ -4,10 +4,10 @@
     var db = null;
     var mysql = require('mysql');
     var config = {
-        host : 'mundorpg.16mb.com',
-        user : 'u388851258',
-        password : 'Animes21',
-        database : 'u388851258_game',
+        host : 'sql3.freemysqlhosting.net',
+        user : 'sql3254135',
+        password : 'YgYuAxsUXl',
+        database : 'sql3254135',
 	    
     }
 
