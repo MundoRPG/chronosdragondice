@@ -8,20 +8,19 @@
         user : 'sql3254135',
         password : 'YgYuAxsUXl',
         database : 'sql3254135',
-	    
     }
 
     this.connect = function (callback){
-        
+
         db = mysql.createConnection(config || process.env.DATABASE_URL);
         db.connect(function (err) {
-            
-           if (err) 
+
+           if (err)
 		   {
             console.error('error connecting myslq :' + err);
             return;
            }
-            
+
            console.log('Connected as database ' + config.database);
 
             callback(err);
@@ -33,21 +32,21 @@
 
         db.query("INSERT INTO users ( `user`, `pass`) VALUES (?,?)",[user,pass], function (err, data) {
             if (err) { console.error(err); }
-            
+
             callback(err, data);
         });
 
     };
 
-	
-	 //function to already verify some exists user with the same name in the database 
+
+	 //function to already verify some exists user with the same name in the database
 	this.verify_fk = function(_user,_pass,callback)
     {
 	    var sql = "SELECT * FROM users WHERE user =" + mysql.escape(_user)+"AND pass ="+mysql.escape(_pass);
 		db.query(sql, function (err, rows) {
 
             if(err){ console.error(err);}
-			
+
 			if (rows[0]) {
 			   callback(true);
 			}
@@ -55,12 +54,12 @@
 			{
 			  callback(false);
 			}
-		
+
         });
-		
+
     };
-    
-	
+
+
 
     this.loadUser = function (user, callback) {
 
